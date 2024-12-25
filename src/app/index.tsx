@@ -1,7 +1,9 @@
 import { View } from "react-native"
+import { router } from "expo-router"
 
 import { Welcome } from "@/components/Welcome"
 import { Steps } from "@/components/Steps"
+import { Button } from "@/components/Button"
 
 export default function Index() {
   return (
@@ -9,6 +11,10 @@ export default function Index() {
       <Welcome />
 
       <Steps />
+
+      <Button onPress={() => router.navigate("/home")}>
+        <Button.Title>Começar</Button.Title>
+      </Button>
     </View>
   )
 }
