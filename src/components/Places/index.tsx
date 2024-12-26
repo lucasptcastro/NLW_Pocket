@@ -1,5 +1,5 @@
 import { useRef } from "react"
-import { Text, useWindowDimensions } from "react-native"
+import { FlatList, Text, useWindowDimensions } from "react-native"
 import BottomSheet, { BottomSheetFlatList } from "@gorhom/bottom-sheet"
 
 import { s } from "./styles"
@@ -26,6 +26,7 @@ export function Places({ data }: Props) {
       handleIndicatorStyle={s.indicator}
       backgroundStyle={s.container}
       enableOverDrag={false}
+      enableDynamicSizing={false}
     >
       <BottomSheetFlatList
         data={data}
