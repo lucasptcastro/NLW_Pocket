@@ -23,8 +23,8 @@ interface ILocation {
 }
 
 const staticLocation = {
-  latitude: -23.561187293883442,
-  longitude: -46.656451388116494,
+  latitude: -5.704308040506016,
+  longitude: -35.29346161357622,
 }
 
 export default function Home() {
